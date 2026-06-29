@@ -13,7 +13,7 @@
             <input type="email" placeholder="Email" class="input-field active" />
           </div>
 
-          <button class="btn-primary">Enviar</button>
+          <button class="btn-primary" @click="router.push('/verification')">Enviar</button>
 
         </div>
       </div>
@@ -23,6 +23,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 </script>
 
 <style scoped>
