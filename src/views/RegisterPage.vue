@@ -17,7 +17,7 @@
 
           <button class="btn-primary">Registrarme</button>
 
-          <p class="ya-tengo">Ya tengo una cuenta</p>
+          <p class="ya-tengo" @click="router.push('/login')">Ya tengo una cuenta</p>
 
           <div class="social">
             <p>O ingresa con</p>
@@ -36,6 +36,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 </script>
 
 <style scoped>
