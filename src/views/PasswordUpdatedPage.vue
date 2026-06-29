@@ -9,7 +9,7 @@
             <p>Tu contraseña se ha actualizado correctamente. Ya puedes iniciar sesión nuevamente.</p>
           </div>
 
-          <button class="btn-primary">Iniciar sesión</button>
+          <button class="btn-primary" @click="router.push('/login')">Iniciar sesión</button>
 
         </div>
       </div>
@@ -19,6 +19,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 </script>
 
 <style scoped>
