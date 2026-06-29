@@ -14,8 +14,8 @@
           </div>
 
           <div class="botones">
-            <button class="btn-primary">Iniciar sesión</button>
-            <button class="btn-secondary">Registrarse</button>
+            <button class="btn-primary" @click="router.push('/login')">Iniciar sesión</button>
+            <button class="btn-secondary" @click="router.push(/register')">Registrarse</button>
           </div>
 
         </div>
