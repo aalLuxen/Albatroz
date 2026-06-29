@@ -1,0 +1,7 @@
+{
+  "name": "Albatroz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
