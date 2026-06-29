@@ -14,10 +14,10 @@
             <input type="password" placeholder="Confirmar contraseña" class="input-field" />
           </div>
 
-          <button class="btn-primary">Guardar contraseña</button>
+          <button class="btn-primary" @click="router.push('/password-updated')">Guardar contraseña</button>
 
           <p class="recordaste">
-            Recordaste tu contraseña? <span class="blue">Inicia sesión</span>
+            Recordaste tu contraseña? <span class="blue" @click="router.push('/login')">Inicia sesión</span>
           </p>
 
         </div>
@@ -28,6 +28,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 </script>
 
 <style scoped>
