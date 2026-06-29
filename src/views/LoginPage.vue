@@ -13,13 +13,13 @@
             <input type="email" placeholder="Email" class="input-field active" />
             <input type="password" placeholder="Contraseña" class="input-field" />
             <div class="forgot">
-              <a href="#">Olvidaste tu contraseña?</a>
+              <a href="#" @click.prevent="router.push('/forgot-password')">Olvidaste tu contraseña?</a>
             </div>
           </div>
 
           <button class="btn-primary">Iniciar sesión</button>
 
-          <p class="crear">Crear una nueva cuenta</p>
+          <p class="crear" @click="router.push('/register')">Crear una nueva cuenta</p>
 
           <div class="social">
             <p>O ingresa con</p>
@@ -38,6 +38,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 </script>
 
 <style scoped>
