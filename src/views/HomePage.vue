@@ -4,8 +4,11 @@
       <div class="wrapper">
         <div class="card">
 
-          <div class="image-placeholder">
-            <!-- Aquí irá tu imagen cuando llegues a casa -->
+          <div class="image-container">
+            <img class="linea" src="/linea.svg" />
+            <img class="ave" src="/Alba.svg" />
+            <img class="ojo" src="/ojo.svg" />
+            <img class="caja" src="/caja.svg" />
           </div>
 
           <div class="texto">
@@ -15,7 +18,7 @@
 
           <div class="botones">
             <button class="btn-primary" @click="router.push('/login')">Iniciar sesión</button>
-            <button class="btn-secondary" @click="router.push(/register')">Registrarse</button>
+            <button class="btn-secondary" @click="router.push('/register')">Registrarse</button>
           </div>
 
         </div>
@@ -96,5 +99,41 @@ const router = useRouter();
   font-weight: 700;
   color: #111;
   cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 428 / 360;
+  margin: 0 auto;
+}
+
+.ave {
+  position: absolute;
+  width: 56.4%;
+  top: 5.2%;
+  left: 0%;
+}
+
+.linea {
+  position: absolute;
+  width: 87.3%;
+  top: 96.2%;
+  left: 0%;
+}
+
+.caja {
+  position: absolute;
+  width: 30.2%;
+  top: 61.1%;
+  left: 56.7%;
+}
+
+.ojo {
+  position: absolute;
+  width: 2.3%;
+  top: 8.3%;
+  left: 39.5%;
 }
 </style>
